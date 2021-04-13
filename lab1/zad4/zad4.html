@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="./zad4.js" type="module"></script>
+    <style>
+      #mycanvas,
+      #mysvg {
+        border: 3px solid red;
+      }
+    </style>
+  </head>
+
+  <body>
+    
+    <p>Instrukcja poniżej</p>
+    <br />
+    <canvas width="600" height="600" id="mycanvas"></canvas>
+    <div>
+      <p>Szybkość poruszania</p>
+      <input type="range" min="2" max="100" value="10" id="speedControl" />
+      <p id="instrukcja">
+        Zasady: przejedź przez niebieskie pole nie dotykająć innych figur
+        <br>
+        Poruszanie:
+        <ul>
+            <li>w - do góry</li>
+            <li>s - w dół</li>
+            <li>a - w lewo</li>
+            <li>d - w prawo</li>
+            <li>u - do przodu</li>
+            <li>j - do tyłu</li>
+        </ul>
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="./zad1-interactive.js" type="module"></script>
+    <style>
+      #mycanvas {
+        border: 3px solid red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <canvas id="mycanvas" width="640" height="480"></canvas>
+    <br>
+    <div>
+
+      <p id="instrukcja">
+        <p id="windowResizer"></p>
+        <p id="positionControl"></p>
+        <input id="commandInput"/>
+        <br>
+        Komendy
+        <ul>
+            <li>fd - naprzód</li>
+            <li>bk - do tyłu</li>
+            <li>lt - w lewo</li>
+            <li>rt - w prawo</li>
+            <li>cs - wyczyść</li>
+            <li>up - podnieś pisak</li>
+            <li>dn - opuść pisak</li>
+            <li>color - zmień kolor</li>
+        </ul>
+      </p>
+      <input type="range" min="1" max="10" value="1" id="lineWidthControl">
+    </div>
+  </body>
+</html>

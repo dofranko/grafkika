@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <script src="./zad5.js" type="module"></script>
+    <style>
+      #mycanvas,
+      #mysvg {
+        border: 3px solid red;
+      }
+    </style>
+  </head>
+
+  <body>
+    
+    <p>Instrukcja poniżej</p>
+    <br />
+    <canvas width="600" height="600" id="mycanvas"></canvas>
+    <div>
+      <p>Szybkość kamery: </p>
+      <input type="range" min="2" max="100" value="10" id="speedControl" />
+      <p id="instrukcja">
+        <p id="positionControl"></p>
+        <input id="commandInput"/>
+        <br>
+        Komendy
+        (Uwaga: komendy (fd, bk) nie wykonają się, jeśli żółw wyszedłby za terrarium)
+        <ul>
+            <li>fd - naprzód</li>
+            <li>bk - do tyłu</li>
+            <li>lt - obrów w lewo</li>
+            <li>rt - obrót w prawo</li>
+            <li>ru - obrót w górę</li>
+            <li>rd - obrót w prawo</li>
+            <li>cs - wyczyść</li>
+            <li>up - podnieś pisak</li>
+            <li>dn - opuść pisak</li>
+            <li>color - zmień kolor</li>
+            <br>
+            <li>m - niewielki ruch do przodu</li>
+        </ul>
+        <br>
+        Poruszanie (działa tylko, gdy pole na komendy nie jest "sfocusowane"):
+        <ul>
+            <li>w - do góry</li>
+            <li>s - w dół</li>
+            <li>a - w lewo</li>
+            <li>d - w prawo</li>
+            <li>u - do przodu</li>
+            <li>j - do tyłu</li>
+            Kamera:
+            <li>h - obrót w lewo</li>
+            <li>d - obrót w prawo</li>
+            <li>i - obrót do góry</li>
+            <li>y - obrót do dołu</li>
+            <li>o - obrót ("glową") w lewo</li>
+            <li>p - obrót ("glową") w prawo</li>
+        </ul>
+      </p>
+    </div>
+  </body>
+</html>
